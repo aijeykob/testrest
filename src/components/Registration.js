@@ -25,7 +25,7 @@ const Registration = ({props}) => {
                                       value={props.password} onChange={(e) => onChangeInput(e)}/>
 
                         <Button variant="primary" onClick={() => submitRegistration()}>
-                            Register
+                           Pls Register
                         </Button>
                     </Form>
 
