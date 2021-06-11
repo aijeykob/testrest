@@ -9,7 +9,7 @@ import {
     setToken,
     setRegisteredUser
 } from '../actions/api';
-import {Link, Route, NavLink} from "react-router-dom";
+import { Route, NavLink} from "react-router-dom";
 import s from "../css/Home.module.css"
 import ViewProductContainer from "./ViewProductContainer";
 import _ from 'lodash'
@@ -30,7 +30,7 @@ class Home extends Component {
     }
 
     selectProduct = (e) => {
-        const selectedProduct = _.findLast(this.props.products, el => el.id == e.target.id);
+        const selectedProduct = _.findLast(this.props.products, el => el.id === e.target.id);
         this.props.getComments(e.target.id);
         this.props.selectedProductsToProps(selectedProduct);
 
